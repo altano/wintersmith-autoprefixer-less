@@ -1,5 +1,8 @@
 {
   "plugins": [
-    "./../index-dev.js"
+    "./../index.js"
+  ],
+  "ignore": [
+    "**/_*.less"
   ]
 }

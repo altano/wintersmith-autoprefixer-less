@@ -1,18 +1,26 @@
 {
-  "name": "wintersmith-plugin",
-  "version": "1.0.0",
-  "description": "A wintersmith plugin.",
-  "author": "Anonymous",
+  "name": "wintersmith-autoprefixer-less",
+  "version": "0.0.1",
+  "repository": "https://github.com/altano/wintersmith-autoprefixer-less",
+  "description": "A wintersmith plugin for autoprefixer & less (automatic CSS vendor prefix). Completely replaces wintersmith-less.",
+  "author": "Alan Norbauer",
   "license": "MIT",
   "keywords": [
     "wintersmith",
-    "wintersmith-plugin"
+    "wintersmith-plugin",
+    "less",
+    "autoprefixer"
   ],
-  "main": "lib/",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "dependencies": {
+    "less": "^2.5.0",
+    "less-plugin-autoprefix": "^1.4.1"
   },
   "devDependencies": {
-    "coffee-script": ">1.5",
     "vows": "0.7.x",
     "wintersmith": "2.x"
   },
@@ -20,7 +28,6 @@
     "wintersmith": "2.x"
   },
   "scripts": {
-    "test": "./node_modules/.bin/vows test/* --spec",
-    "prepublish": "./bin/compile"
+    "test": "./node_modules/.bin/vows test/* --spec"
   }
 }
